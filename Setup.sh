@@ -1,25 +1,25 @@
-sudo apt-get -y dist-upgrade
-sudo apt-get -y update
-sudo apt-get -y upgrade
-sudo apt-get -y autoremove
+sudo apt dist-upgrade -y
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt autoremove -y
 
 ####Install applications
 ##Git
 ##sudo install git
 
 ##Python and go
-sudo apt-get -y install golang-go python3 python3-pip
+sudo apt install golang-go python3 python3-pip -y
 cd /usr/bin
 sudo cp python3 python
 
 ##NMAP
-sudo apt-get -y install nmap
+sudo apt install nmap -y
 
 ##DNSRecon
-sudo apt-get -y install dnsrecon
+sudo apt install dnsrecon -y
 
 ##GoBuster
-sudo apt-get -y install gobuster
+sudo apt install gobuster -y
 
 ##Sublist3r
 cd ~
@@ -34,7 +34,7 @@ go get -u github.com/ffuf/ffuf
 sudo cp ~/go/bin/ffuf /usr/local/bin/
 
 ##Hydra
-sudo apt-get -y install hydra
+sudo apt install hydra -y
 
 ##Wordlists
 cd ~
@@ -64,4 +64,4 @@ wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/
 cd ~
 git clone https://github.com/CiscoCXSecurity/enum4linux
 sudo cp ~/enum4linux/enum4linux.pl /usr/sbin/enum4linux
-sudo apt-get -y install samba
+sudo apt install samba -y
