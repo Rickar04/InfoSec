@@ -65,3 +65,9 @@ cd ~
 git clone https://github.com/CiscoCXSecurity/enum4linux
 sudo cp ~/enum4linux/enum4linux.pl /usr/sbin/enum4linux
 sudo apt install samba -y
+
+#SearchSploit
+cd /tmp
+sudo git clone https://github.com/offensive-security/exploitdb.git /opt/exploit-database
+sudo ln -sf /opt/exploit-database/searchsploit /usr/local/bin/searchsploit
+sudo cp -n /opt/exploit-database/.searchsploit_rc ~/
